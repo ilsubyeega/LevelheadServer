@@ -13,6 +13,13 @@ namespace LevelheadServer
 	{
 		public static void Main(string[] args)
 		{
+			string value = Environment.GetEnvironmentVariable("HYPIXEL_API_KEY");
+			if (value == null)
+			{
+				Console.WriteLine("HYPIXEL_API_KEY not found in environment variable.");
+				return;
+			}
+			LevelHead.API_KEY = value;
 			LevelHead.setObj();
 			CreateHostBuilder(args).Build().Run();
 		}

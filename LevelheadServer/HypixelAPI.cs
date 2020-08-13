@@ -123,9 +123,12 @@ namespace LevelheadServer
 			switch (name)
 			{
 				case "LEVEL":
+					string a = getValueByKey("player.networkExp");
+					if (a == null)
+						return "0";
 					return LevelCalculator.GetExactStringLevel(
 						double.Parse(
-							getValueByKey("player.networkExp")
+							a
 							)
 						);
 				default:

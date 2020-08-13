@@ -10,7 +10,7 @@ namespace LevelheadServer
 	public static class LevelHead
 	{
 		public static bool FROZEN = false;
-		public static string API_KEY = "8ffd39d8-1ad8-41a8-ac1b-895fb7527b91";
+		public static string API_KEY = "";
 		public static Dictionary<string, TypeObj> objlist = new Dictionary<string, TypeObj>();
 		public static void setObj()
 		{
