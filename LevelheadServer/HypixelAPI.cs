@@ -131,6 +131,17 @@ namespace LevelheadServer
 							a
 							)
 						);
+				case "BW_FKD":
+					try
+					{
+						int kills = int.Parse(getValueByKey("player.stats.Bedwars.final_kills_bedwars"));
+						int deaths = int.Parse(getValueByKey("player.stats.Bedwars.final_deaths_bedwars"));
+						double rate = (double)kills / deaths;
+						return rate.ToString("N1");
+					} catch
+					{
+						return "?";
+					}
 				default:
 					if (name.Contains("+"))
 					{

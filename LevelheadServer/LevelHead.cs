@@ -23,8 +23,11 @@ namespace LevelheadServer
 			objlist.Add("BW_LEVEL", new TypeObj("Bed Wars: Level", 1, 1000, "player.achievements.bedwars_level"));
 			objlist.Add("BW_BEDS", new TypeObj("Bed Wars: Beds", 1, 10000, "player.achievements.bedwars_beds"));
 
+			objlist.Add("BW_FKD", new TypeObj("Bed Wars: F K/D", 1, 100, ""));
+
 			// Special
 			objlist.Add("LEVEL+BW_LEVEL", new TypeObj("Level + Bed Wars: Level", 1, 100, ""));
+			objlist.Add("LEVEL+BW_LEVEL+BW_FKD", new TypeObj("Level + Bed Wars: Level + F K/D", 1, 100, ""));
 			Console.WriteLine("Finished writing levelhead type list.");
 		}
 	}
